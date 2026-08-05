@@ -18,6 +18,15 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
+
+        // 👇 在这里新增你的 Duolingo 专属变体！
+        duolingo:
+          "bg-brand-green text-white font-bold border-b-4 border-brand-green-dark rounded-2xl hover:bg-brand-green/90 active:translate-y-1 active:border-b-0",
+        
+        // 💡 顺便你还可以加一个蓝色的 Duolingo 变体（可选）
+        "duolingo-blue":
+          "bg-brand-blue text-white font-bold border-b-4 border-blue-600 rounded-2xl hover:bg-brand-blue/90 active:translate-y-1 active:border-b-0",
+
       },
       size: {
         default:
@@ -25,6 +34,7 @@ const buttonVariants = cva(
         xs: "h-6 gap-1 rounded-[min(var(--radius-md),10px)] px-2 text-xs in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3",
         sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
         lg: "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+        xl: "h-12 px-8 text-base", // 👈 （可选）多邻国风格一般按钮比较大，加个 xl 尺寸更好看
         icon: "size-8",
         "icon-xs":
           "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
