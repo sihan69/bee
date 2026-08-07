@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Bee‑英语练习平台",
+  title: "Bee-英语练习平台",
   description: "打字模式练习英语的学习平台",
 };
 

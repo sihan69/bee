@@ -4,7 +4,8 @@ import { Flame, ShieldAlert, Sparkles } from "lucide-react";
 
 export function RightSidebar() {
   return (
-    <aside className="hidden lg:flex flex-col gap-4 w-80 fixed right-0 top-0 h-svh p-4 overflow-y-auto bg-white">
+    // 使用 sticky 代替 fixed，随滚动吸顶且脱离了全局 flex 干扰
+    <aside className="hidden lg:flex flex-col gap-4 w-80 sticky top-0 h-svh p-4 overflow-y-auto bg-white border-l border-slate-200 shrink-0">
       <Card className="border-2 border-slate-200 shadow-none rounded-2xl">
         <CardHeader className="pb-2">
           <CardTitle className="text-base font-extrabold flex items-center gap-2 text-purple-600">
